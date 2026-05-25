@@ -5,6 +5,8 @@ import MobileBottomNav from "./components/MobileBottomNav";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://carikerja-ai.vercel.app"),
+  applicationName: "CariKerja AI",
+  manifest: "/manifest.webmanifest",
   title: {
     default: "CariKerja AI - Pencarian Lowongan Kerja",
     template: "%s | CariKerja AI",
@@ -38,6 +40,14 @@ export const metadata: Metadata = {
     title: "CariKerja AI - Pencarian Lowongan Kerja",
     description:
       "Temukan lowongan kerja, baca artikel karier, dan cek kecocokan CV dengan deskripsi pekerjaan.",
+  },
+  appleWebApp: {
+    capable: true,
+    title: "CariKerja AI",
+    statusBarStyle: "default",
+  },
+  formatDetection: {
+    telephone: false,
   },
   robots: {
     index: true,
