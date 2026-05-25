@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import "./globals.css";
 import SiteFooter from "./components/SiteFooter";
+import MobileBottomNav from "./components/MobileBottomNav";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://carikerja-ai.vercel.app"),
@@ -54,9 +55,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body>
+      <body className="pb-20 md:pb-0">
         {children}
         <SiteFooter />
+        <MobileBottomNav />
       </body>
     </html>
   );
