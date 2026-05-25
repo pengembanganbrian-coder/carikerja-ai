@@ -1,4 +1,6 @@
-﻿const articles = [
+﻿import { careerArticles } from "../data/careerArticles";
+
+const mainArticles = [
   {
     title: "Cara Membuat CV ATS Friendly untuk Melamar Kerja",
     slug: "cv-ats-friendly",
@@ -19,6 +21,8 @@
   },
 ];
 
+const articles = [...mainArticles, ...careerArticles];
+
 export default function BlogPage() {
   return (
     <main className="min-h-screen bg-slate-50 px-6 py-8 text-slate-900">
@@ -35,7 +39,9 @@ export default function BlogPage() {
             <a href="/blog" className="text-blue-700">
               Artikel Karier
             </a>
-            <a href="/tools/cv-checker" className="hover:text-blue-700">CV Checker</a>
+            <a href="/tools/cv-checker" className="hover:text-blue-700">
+              CV Checker
+            </a>
           </nav>
         </header>
 
@@ -70,4 +76,3 @@ export default function BlogPage() {
     </main>
   );
 }
-
