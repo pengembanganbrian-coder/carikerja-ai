@@ -1,9 +1,10 @@
 ﻿import type { MetadataRoute } from "next";
+import { careerArticles } from "./data/careerArticles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://carikerja-ai.vercel.app";
 
-  return [
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -65,4 +66,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
   ];
+
+  const articlePages: MetadataRoute.Sitemap = careerArticles.map((article) => ({
+    url: `${baseUrl}/blog/${article.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...articlePages];
 }
