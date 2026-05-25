@@ -18,13 +18,27 @@ export async function generateMetadata({
 
   if (!article) {
     return {
-      title: "Artikel tidak ditemukan - CariKerja AI",
+      title: "Artikel tidak ditemukan",
+      description: "Artikel yang kamu cari belum tersedia di CariKerja AI.",
     };
   }
 
   return {
-    title: `${article.title} - CariKerja AI`,
+    title: article.title,
     description: article.description,
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      url: `https://carikerja-ai.vercel.app/blog/${article.slug}`,
+      siteName: "CariKerja AI",
+      locale: "id_ID",
+      type: "article",
+    },
+    twitter: {
+      card: "summary",
+      title: article.title,
+      description: article.description,
+    },
   };
 }
 
