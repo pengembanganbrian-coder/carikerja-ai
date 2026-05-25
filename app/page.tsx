@@ -11,10 +11,12 @@
             <a href="/jobs" className="hover:text-blue-700">
               Lowongan
             </a>
-            <a href="#" className="hover:text-blue-700">
+            <a href="/blog" className="hover:text-blue-700">
               Artikel Karier
             </a>
-            <a href="/tools/cv-checker" className="hover:text-blue-700">CV Checker</a>
+            <a href="/tools/cv-checker" className="hover:text-blue-700">
+              CV Checker
+            </a>
           </nav>
         </header>
 
@@ -59,30 +61,38 @@
           </form>
 
           <div className="mt-10 grid w-full max-w-4xl gap-4 md:grid-cols-3">
-            <div className="rounded-2xl bg-white p-5 text-left shadow">
+            <a
+              href="/jobs"
+              className="rounded-2xl bg-white p-5 text-left shadow transition hover:shadow-lg"
+            >
               <h3 className="font-bold">Lowongan Terbaru</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Kumpulan lowongan dari berbagai sumber terpercaya.
               </p>
-            </div>
+            </a>
 
-            <div className="rounded-2xl bg-white p-5 text-left shadow">
-              <h3 className="font-bold">AI Job Matching</h3>
+            <a
+              href="/tools/cv-checker"
+              className="rounded-2xl bg-white p-5 text-left shadow transition hover:shadow-lg"
+            >
+              <h3 className="font-bold">CV Checker</h3>
               <p className="mt-2 text-sm text-slate-600">
-                Cocokkan CV dengan deskripsi pekerjaan secara otomatis.
+                Cek kecocokan CV dengan deskripsi pekerjaan secara sederhana.
               </p>
-            </div>
+            </a>
 
-            <div className="rounded-2xl bg-white p-5 text-left shadow">
+            <a
+              href="/blog"
+              className="rounded-2xl bg-white p-5 text-left shadow transition hover:shadow-lg"
+            >
               <h3 className="font-bold">Artikel Karier</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Tips CV, interview, dan pengembangan karier.
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
     </main>
   );
 }
-
