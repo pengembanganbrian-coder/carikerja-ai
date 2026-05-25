@@ -272,4 +272,268 @@ export const careerArticles: CareerArticle[] = [
     ],
     tip: "Jika tidak ada balasan setelah follow up, tetap lanjut mencari peluang lain. Jangan menggantungkan proses pada satu lamaran saja."
   }
+
+  ,
+  {
+    title: "Cara Mengenali Lowongan Kerja Palsu",
+    slug: "cara-mengenali-lowongan-kerja-palsu",
+    category: "Strategi Melamar",
+    description: "Panduan mengenali ciri-ciri lowongan kerja palsu agar pencari kerja lebih aman saat melamar.",
+    intro: "Lowongan kerja palsu masih sering ditemukan di internet. Karena itu, pencari kerja perlu lebih teliti sebelum mengirimkan CV, data pribadi, atau mengikuti instruksi dari pihak yang mengaku sebagai recruiter.",
+    sections: [
+      {
+        heading: "1. Waspadai Permintaan Uang",
+        body: "Perusahaan yang kredibel umumnya tidak meminta biaya administrasi, biaya seragam, biaya pelatihan, atau transfer dana sebagai syarat mengikuti proses rekrutmen."
+      },
+      {
+        heading: "2. Cek Alamat Email dan Website",
+        body: "Perhatikan apakah email recruiter menggunakan domain resmi perusahaan. Jika hanya memakai email gratis tanpa identitas jelas, kamu perlu lebih berhati-hati."
+      },
+      {
+        heading: "3. Perhatikan Bahasa Lowongan",
+        body: "Lowongan palsu sering menggunakan bahasa yang terlalu bombastis, menjanjikan gaji sangat besar tanpa kualifikasi jelas, atau meminta respons sangat cepat."
+      },
+      {
+        heading: "4. Verifikasi ke Situs Resmi",
+        body: "Sebelum mengirim data pribadi, cek kembali apakah lowongan tersebut juga tersedia di situs resmi perusahaan atau kanal rekrutmen yang terpercaya."
+      }
+    ],
+    tip: "Jika sebuah lowongan meminta uang atau data pribadi sensitif terlalu awal, lebih baik berhenti dan verifikasi ulang."
+  },
+  {
+    title: "Cara Membuat Portofolio untuk Melamar Kerja",
+    slug: "cara-membuat-portofolio-untuk-melamar-kerja",
+    category: "Strategi Melamar",
+    description: "Cara menyusun portofolio sederhana agar pengalaman dan hasil kerja lebih mudah dinilai recruiter.",
+    intro: "Portofolio membantu recruiter melihat bukti kemampuanmu secara konkret. Tidak hanya untuk desainer, portofolio juga bisa dibuat oleh penulis, analis data, HR, marketer, programmer, dan fresh graduate.",
+    sections: [
+      {
+        heading: "1. Pilih Karya yang Paling Relevan",
+        body: "Jangan memasukkan semua hasil kerja. Pilih karya atau proyek yang paling sesuai dengan posisi yang kamu incar."
+      },
+      {
+        heading: "2. Jelaskan Peranmu dalam Proyek",
+        body: "Tuliskan konteks proyek, tugas yang kamu lakukan, tools yang digunakan, dan hasil yang dicapai agar recruiter memahami kontribusimu."
+      },
+      {
+        heading: "3. Gunakan Format yang Mudah Dibuka",
+        body: "Portofolio bisa dibuat dalam bentuk PDF, website sederhana, Google Drive, Notion, GitHub, atau platform lain yang mudah diakses."
+      },
+      {
+        heading: "4. Tampilkan Dampak atau Hasil",
+        body: "Jika memungkinkan, tambahkan angka, insight, atau hasil nyata seperti peningkatan engagement, jumlah peserta, efisiensi proses, atau output yang berhasil dibuat."
+      }
+    ],
+    tip: "Portofolio yang baik bukan yang paling banyak isinya, tetapi yang paling relevan dengan posisi yang dilamar."
+  },
+  {
+    title: "Tips Negosiasi Gaji untuk Pemula",
+    slug: "tips-negosiasi-gaji-untuk-pemula",
+    category: "Interview",
+    description: "Panduan sederhana melakukan negosiasi gaji dengan sopan, realistis, dan tetap profesional.",
+    intro: "Negosiasi gaji sering terasa menegangkan, terutama bagi fresh graduate atau kandidat yang belum terbiasa. Padahal, negosiasi bisa dilakukan dengan tetap sopan dan berbasis data.",
+    sections: [
+      {
+        heading: "1. Cari Tahu Kisaran Gaji Posisi",
+        body: "Sebelum interview, cari informasi kisaran gaji untuk posisi, lokasi, industri, dan level pengalaman yang serupa."
+      },
+      {
+        heading: "2. Pahami Nilai yang Kamu Tawarkan",
+        body: "Hubungkan ekspektasi gaji dengan pengalaman, skill, sertifikasi, pencapaian, atau tanggung jawab yang akan kamu jalankan."
+      },
+      {
+        heading: "3. Gunakan Rentang Gaji",
+        body: "Alih-alih menyebut satu angka kaku, kamu bisa menyampaikan rentang gaji yang realistis dan masih membuka ruang diskusi."
+      },
+      {
+        heading: "4. Tetap Sopan dan Fleksibel",
+        body: "Jika penawaran belum sesuai, tanyakan komponen lain seperti tunjangan, bonus, kesempatan belajar, sistem kerja, atau evaluasi setelah masa tertentu."
+      }
+    ],
+    tip: "Negosiasi gaji yang baik bukan sekadar meminta angka lebih tinggi, tetapi menjelaskan alasan secara profesional."
+  },
+  {
+    title: "Cara Menjelaskan Career Gap Saat Interview",
+    slug: "cara-menjelaskan-career-gap-saat-interview",
+    category: "Interview",
+    description: "Cara menjawab pertanyaan tentang jeda karier tanpa terlihat defensif atau tidak siap.",
+    intro: "Career gap atau jeda karier bisa terjadi karena banyak alasan, seperti melanjutkan studi, merawat keluarga, mencari arah karier baru, kesehatan, atau proses mencari pekerjaan yang cukup panjang.",
+    sections: [
+      {
+        heading: "1. Jawab dengan Jujur dan Singkat",
+        body: "Tidak perlu menjelaskan terlalu detail. Sampaikan alasan utama secara wajar, lalu arahkan pembicaraan ke kesiapanmu untuk kembali bekerja."
+      },
+      {
+        heading: "2. Tunjukkan Aktivitas Produktif",
+        body: "Jika selama jeda karier kamu mengikuti kursus, freelance, volunteer, belajar skill baru, atau mengerjakan proyek pribadi, sampaikan hal tersebut."
+      },
+      {
+        heading: "3. Hubungkan dengan Posisi yang Dilamar",
+        body: "Jelaskan mengapa saat ini kamu siap dan tertarik dengan posisi tersebut, serta bagaimana pengalaman sebelumnya tetap relevan."
+      },
+      {
+        heading: "4. Hindari Nada Terlalu Membela Diri",
+        body: "Jawaban yang tenang, jujur, dan fokus ke masa depan biasanya lebih baik daripada jawaban yang terlalu panjang dan defensif."
+      }
+    ],
+    tip: "Career gap bukan akhir dari peluang kerja. Yang penting adalah bagaimana kamu menjelaskan kesiapan dan relevansi dirimu."
+  },
+  {
+    title: "Tips Career Switch ke Bidang Baru",
+    slug: "tips-career-switch-ke-bidang-baru",
+    category: "Pengembangan Karier",
+    description: "Strategi berpindah bidang karier dengan lebih terarah dan realistis.",
+    intro: "Career switch bisa menjadi langkah besar dalam perjalanan karier. Agar lebih realistis, kamu perlu memahami skill yang sudah dimiliki, skill yang perlu ditambah, dan posisi transisi yang bisa menjadi jembatan.",
+    sections: [
+      {
+        heading: "1. Identifikasi Transferable Skills",
+        body: "Transferable skills adalah kemampuan yang bisa dipakai di banyak bidang, seperti komunikasi, analisis, manajemen proyek, riset, pelayanan, atau problem solving."
+      },
+      {
+        heading: "2. Pelajari Skill Teknis yang Dibutuhkan",
+        body: "Setelah menentukan bidang baru, pelajari tools, istilah, dan kemampuan teknis yang paling sering muncul di lowongan bidang tersebut."
+      },
+      {
+        heading: "3. Buat Proyek Kecil",
+        body: "Jika belum punya pengalaman langsung, buat proyek kecil untuk membuktikan kemampuan. Misalnya portofolio, studi kasus, tulisan, dashboard, atau aplikasi sederhana."
+      },
+      {
+        heading: "4. Cari Posisi Jembatan",
+        body: "Kadang perpindahan karier lebih mudah lewat posisi yang masih memakai pengalaman lama, tetapi mulai membuka jalan ke bidang baru."
+      }
+    ],
+    tip: "Career switch lebih mudah jika kamu bisa menunjukkan hubungan antara pengalaman lama dan kebutuhan bidang baru."
+  }
+
+  ,
+  {
+    title: "Cara Mengenali Lowongan Kerja Palsu",
+    slug: "cara-mengenali-lowongan-kerja-palsu",
+    category: "Strategi Melamar",
+    description: "Panduan mengenali ciri-ciri lowongan kerja palsu agar pencari kerja lebih aman saat melamar.",
+    intro: "Lowongan kerja palsu masih sering ditemukan di internet. Karena itu, pencari kerja perlu lebih teliti sebelum mengirimkan CV, data pribadi, atau mengikuti instruksi dari pihak yang mengaku sebagai recruiter.",
+    sections: [
+      {
+        heading: "1. Waspadai Permintaan Uang",
+        body: "Perusahaan yang kredibel umumnya tidak meminta biaya administrasi, biaya seragam, biaya pelatihan, atau transfer dana sebagai syarat mengikuti proses rekrutmen."
+      },
+      {
+        heading: "2. Cek Alamat Email dan Website",
+        body: "Perhatikan apakah email recruiter menggunakan domain resmi perusahaan. Jika hanya memakai email gratis tanpa identitas jelas, kamu perlu lebih berhati-hati."
+      },
+      {
+        heading: "3. Perhatikan Bahasa Lowongan",
+        body: "Lowongan palsu sering menggunakan bahasa yang terlalu bombastis, menjanjikan gaji sangat besar tanpa kualifikasi jelas, atau meminta respons sangat cepat."
+      },
+      {
+        heading: "4. Verifikasi ke Situs Resmi",
+        body: "Sebelum mengirim data pribadi, cek kembali apakah lowongan tersebut juga tersedia di situs resmi perusahaan atau kanal rekrutmen yang terpercaya."
+      }
+    ],
+    tip: "Jika sebuah lowongan meminta uang atau data pribadi sensitif terlalu awal, lebih baik berhenti dan verifikasi ulang."
+  },
+  {
+    title: "Cara Membuat Portofolio untuk Melamar Kerja",
+    slug: "cara-membuat-portofolio-untuk-melamar-kerja",
+    category: "Strategi Melamar",
+    description: "Cara menyusun portofolio sederhana agar pengalaman dan hasil kerja lebih mudah dinilai recruiter.",
+    intro: "Portofolio membantu recruiter melihat bukti kemampuanmu secara konkret. Tidak hanya untuk desainer, portofolio juga bisa dibuat oleh penulis, analis data, HR, marketer, programmer, dan fresh graduate.",
+    sections: [
+      {
+        heading: "1. Pilih Karya yang Paling Relevan",
+        body: "Jangan memasukkan semua hasil kerja. Pilih karya atau proyek yang paling sesuai dengan posisi yang kamu incar."
+      },
+      {
+        heading: "2. Jelaskan Peranmu dalam Proyek",
+        body: "Tuliskan konteks proyek, tugas yang kamu lakukan, tools yang digunakan, dan hasil yang dicapai agar recruiter memahami kontribusimu."
+      },
+      {
+        heading: "3. Gunakan Format yang Mudah Dibuka",
+        body: "Portofolio bisa dibuat dalam bentuk PDF, website sederhana, Google Drive, Notion, GitHub, atau platform lain yang mudah diakses."
+      },
+      {
+        heading: "4. Tampilkan Dampak atau Hasil",
+        body: "Jika memungkinkan, tambahkan angka, insight, atau hasil nyata seperti peningkatan engagement, jumlah peserta, efisiensi proses, atau output yang berhasil dibuat."
+      }
+    ],
+    tip: "Portofolio yang baik bukan yang paling banyak isinya, tetapi yang paling relevan dengan posisi yang dilamar."
+  },
+  {
+    title: "Tips Negosiasi Gaji untuk Pemula",
+    slug: "tips-negosiasi-gaji-untuk-pemula",
+    category: "Interview",
+    description: "Panduan sederhana melakukan negosiasi gaji dengan sopan, realistis, dan tetap profesional.",
+    intro: "Negosiasi gaji sering terasa menegangkan, terutama bagi fresh graduate atau kandidat yang belum terbiasa. Padahal, negosiasi bisa dilakukan dengan tetap sopan dan berbasis data.",
+    sections: [
+      {
+        heading: "1. Cari Tahu Kisaran Gaji Posisi",
+        body: "Sebelum interview, cari informasi kisaran gaji untuk posisi, lokasi, industri, dan level pengalaman yang serupa."
+      },
+      {
+        heading: "2. Pahami Nilai yang Kamu Tawarkan",
+        body: "Hubungkan ekspektasi gaji dengan pengalaman, skill, sertifikasi, pencapaian, atau tanggung jawab yang akan kamu jalankan."
+      },
+      {
+        heading: "3. Gunakan Rentang Gaji",
+        body: "Alih-alih menyebut satu angka kaku, kamu bisa menyampaikan rentang gaji yang realistis dan masih membuka ruang diskusi."
+      },
+      {
+        heading: "4. Tetap Sopan dan Fleksibel",
+        body: "Jika penawaran belum sesuai, tanyakan komponen lain seperti tunjangan, bonus, kesempatan belajar, sistem kerja, atau evaluasi setelah masa tertentu."
+      }
+    ],
+    tip: "Negosiasi gaji yang baik bukan sekadar meminta angka lebih tinggi, tetapi menjelaskan alasan secara profesional."
+  },
+  {
+    title: "Cara Menjelaskan Career Gap Saat Interview",
+    slug: "cara-menjelaskan-career-gap-saat-interview",
+    category: "Interview",
+    description: "Cara menjawab pertanyaan tentang jeda karier tanpa terlihat defensif atau tidak siap.",
+    intro: "Career gap atau jeda karier bisa terjadi karena banyak alasan, seperti melanjutkan studi, merawat keluarga, mencari arah karier baru, kesehatan, atau proses mencari pekerjaan yang cukup panjang.",
+    sections: [
+      {
+        heading: "1. Jawab dengan Jujur dan Singkat",
+        body: "Tidak perlu menjelaskan terlalu detail. Sampaikan alasan utama secara wajar, lalu arahkan pembicaraan ke kesiapanmu untuk kembali bekerja."
+      },
+      {
+        heading: "2. Tunjukkan Aktivitas Produktif",
+        body: "Jika selama jeda karier kamu mengikuti kursus, freelance, volunteer, belajar skill baru, atau mengerjakan proyek pribadi, sampaikan hal tersebut."
+      },
+      {
+        heading: "3. Hubungkan dengan Posisi yang Dilamar",
+        body: "Jelaskan mengapa saat ini kamu siap dan tertarik dengan posisi tersebut, serta bagaimana pengalaman sebelumnya tetap relevan."
+      },
+      {
+        heading: "4. Hindari Nada Terlalu Membela Diri",
+        body: "Jawaban yang tenang, jujur, dan fokus ke masa depan biasanya lebih baik daripada jawaban yang terlalu panjang dan defensif."
+      }
+    ],
+    tip: "Career gap bukan akhir dari peluang kerja. Yang penting adalah bagaimana kamu menjelaskan kesiapan dan relevansi dirimu."
+  },
+  {
+    title: "Tips Career Switch ke Bidang Baru",
+    slug: "tips-career-switch-ke-bidang-baru",
+    category: "Pengembangan Karier",
+    description: "Strategi berpindah bidang karier dengan lebih terarah dan realistis.",
+    intro: "Career switch bisa menjadi langkah besar dalam perjalanan karier. Agar lebih realistis, kamu perlu memahami skill yang sudah dimiliki, skill yang perlu ditambah, dan posisi transisi yang bisa menjadi jembatan.",
+    sections: [
+      {
+        heading: "1. Identifikasi Transferable Skills",
+        body: "Transferable skills adalah kemampuan yang bisa dipakai di banyak bidang, seperti komunikasi, analisis, manajemen proyek, riset, pelayanan, atau problem solving."
+      },
+      {
+        heading: "2. Pelajari Skill Teknis yang Dibutuhkan",
+        body: "Setelah menentukan bidang baru, pelajari tools, istilah, dan kemampuan teknis yang paling sering muncul di lowongan bidang tersebut."
+      },
+      {
+        heading: "3. Buat Proyek Kecil",
+        body: "Jika belum punya pengalaman langsung, buat proyek kecil untuk membuktikan kemampuan. Misalnya portofolio, studi kasus, tulisan, dashboard, atau aplikasi sederhana."
+      },
+      {
+        heading: "4. Cari Posisi Jembatan",
+        body: "Kadang perpindahan karier lebih mudah lewat posisi yang masih memakai pengalaman lama, tetapi mulai membuka jalan ke bidang baru."
+      }
+    ],
+    tip: "Career switch lebih mudah jika kamu bisa menunjukkan hubungan antara pengalaman lama dan kebutuhan bidang baru."
+  }
 ];
