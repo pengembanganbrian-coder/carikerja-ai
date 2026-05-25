@@ -25,6 +25,9 @@
           <a href="/jobs" className="hover:text-blue-700">
             Lowongan
           </a>
+          <a href="/saved-jobs" className="hover:text-blue-700">
+            Tersimpan
+          </a>
         </div>
       </div>
     </footer>
