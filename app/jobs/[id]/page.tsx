@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import AdPlaceholder from "../../components/AdPlaceholder";
 
 type Job = {
@@ -17,6 +17,7 @@ type Job = {
 
 export default function JobDetailPage() {
   const [job, setJob] = useState<Job | null>(null);
+  const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function JobDetailPage() {
 
         const foundJob = data.find((item) => String(item.id) === String(id));
         setJob(foundJob || null);
+        setJobs(data);
       } catch (error) {
         console.error("Gagal mengambil detail lowongan:", error);
       } finally {
@@ -38,6 +40,32 @@ export default function JobDetailPage() {
 
     loadJob();
   }, []);
+
+  const relatedJobs = useMemo(() => {
+    if (!job) return [];
+
+    return jobs
+      .filter((item) => item.id !== job.id)
+      .filter((item) => {
+        const sameType = item.type === job.type;
+        const sameLocation = item.location === job.location;
+        const titleMatch =
+          item.title.toLowerCase().includes(job.title.split(" ")[0].toLowerCase()) ||
+          job.title.toLowerCase().includes(item.title.split(" ")[0].toLowerCase());
+
+        return sameType || sameLocation || titleMatch;
+      })
+      .slice(0, 3);
+  }, [job, jobs]);
+
+  const fallbackJobs = useMemo(() => {
+    if (!job) return [];
+
+    return jobs.filter((item) => item.id !== job.id).slice(0, 3);
+  }, [job, jobs]);
+
+  const displayedRelatedJobs =
+    relatedJobs.length > 0 ? relatedJobs : fallbackJobs;
 
   if (loading) {
     return (
@@ -119,6 +147,41 @@ export default function JobDetailPage() {
           </p>
 
           <AdPlaceholder />
+
+          <section className="mt-10 border-t border-slate-200 pt-8">
+            <h2 className="text-2xl font-bold">Lowongan Terkait</h2>
+            <p className="mt-2 text-slate-600">
+              Lihat juga beberapa lowongan lain yang mungkin relevan dengan pencarianmu.
+            </p>
+
+            <div className="mt-5 grid gap-4">
+              {displayedRelatedJobs.map((relatedJob) => (
+                <a
+                  key={relatedJob.id}
+                  href={`/jobs/${relatedJob.id}`}
+                  className="rounded-2xl border border-slate-200 p-5 transition hover:border-blue-300 hover:bg-blue-50"
+                >
+                  <h3 className="text-lg font-bold">{relatedJob.title}</h3>
+
+                  <p className="mt-1 font-medium text-slate-700">
+                    {relatedJob.company}
+                  </p>
+
+                  <div className="mt-3 flex flex-wrap gap-2 text-sm">
+                    <span className="rounded-full bg-slate-100 px-3 py-1">
+                      {relatedJob.location}
+                    </span>
+                    <span className="rounded-full bg-slate-100 px-3 py-1">
+                      {relatedJob.type}
+                    </span>
+                    <span className="rounded-full bg-blue-100 px-3 py-1 text-blue-700">
+                      {relatedJob.source}
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
