@@ -74,6 +74,20 @@ export default async function DynamicBlogArticlePage({
     );
   }
 
+  const relatedArticles = careerArticles
+    .filter(
+      (item) =>
+        item.slug !== article.slug && item.category === article.category
+    )
+    .slice(0, 3);
+
+  const fallbackArticles = careerArticles
+    .filter((item) => item.slug !== article.slug)
+    .slice(0, 3);
+
+  const displayedRelatedArticles =
+    relatedArticles.length > 0 ? relatedArticles : fallbackArticles;
+
   return (
     <main className="min-h-screen bg-slate-50 px-6 py-8 text-slate-900">
       <article className="mx-auto max-w-3xl rounded-2xl bg-white p-8 shadow">
@@ -107,6 +121,31 @@ export default async function DynamicBlogArticlePage({
         </div>
 
         <AdPlaceholder />
+
+        <section className="mt-10 border-t border-slate-200 pt-8">
+          <h2 className="text-2xl font-bold">Artikel Terkait</h2>
+          <p className="mt-2 text-slate-600">
+            Baca juga panduan lain yang bisa membantu kamu mempersiapkan lamaran kerja.
+          </p>
+
+          <div className="mt-5 grid gap-4">
+            {displayedRelatedArticles.map((related) => (
+              <a
+                key={related.slug}
+                href={`/blog/${related.slug}`}
+                className="rounded-2xl border border-slate-200 p-5 transition hover:border-blue-300 hover:bg-blue-50"
+              >
+                <p className="text-sm font-semibold text-blue-700">
+                  {related.category}
+                </p>
+                <h3 className="mt-2 text-lg font-bold">{related.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  {related.description}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
