@@ -112,6 +112,30 @@ export default function JobsPage() {
             Data lowongan di halaman ini sudah diambil otomatis dari sumber web.
             Untuk tahap awal, sumber data masih menggunakan Remotive.
           </p>
+
+          <div className="mt-5 flex flex-wrap gap-3">
+            <a href="/jobs/category/remote" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow hover:text-blue-700">
+              Remote
+            </a>
+            <a href="/jobs/category/engineering" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow hover:text-blue-700">
+              Engineering
+            </a>
+            <a href="/jobs/category/marketing" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow hover:text-blue-700">
+              Marketing
+            </a>
+            <a href="/jobs/category/sales" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow hover:text-blue-700">
+              Sales
+            </a>
+            <a href="/jobs/category/customer-service" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow hover:text-blue-700">
+              Customer Service
+            </a>
+            <a href="/jobs/category/writing" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow hover:text-blue-700">
+              Writing
+            </a>
+            <a href="/jobs/category/ai" className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow hover:text-blue-700">
+              AI
+            </a>
+          </div>
         </div>
 
         <form
