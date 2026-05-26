@@ -3,6 +3,34 @@ import { jobCategories } from "./data/jobCategories";
 
 const latestArticles = careerArticles.slice(0, 6);
 
+const faqs = [
+  {
+    question: "Apa itu CariKerja AI?",
+    answer:
+      "CariKerja AI adalah platform pencarian lowongan kerja yang membantu pengguna menemukan peluang kerja dari berbagai sumber web, membaca artikel karier, dan mengecek kecocokan CV dengan lowongan.",
+  },
+  {
+    question: "Apakah melamar kerja lewat CariKerja AI berbayar?",
+    answer:
+      "Tidak. CariKerja AI tidak memungut biaya apa pun untuk proses melamar kerja. Jika ada pihak yang meminta biaya rekrutmen, pengguna disarankan untuk berhati-hati dan memverifikasi informasi ke situs resmi perusahaan.",
+  },
+  {
+    question: "Dari mana sumber lowongan kerja yang ditampilkan?",
+    answer:
+      "Pada tahap awal, data lowongan berasal dari sumber pihak ketiga yang tersedia secara publik. Untuk proses melamar, pengguna akan diarahkan ke situs asli penyedia lowongan.",
+  },
+  {
+    question: "Apakah CV Checker menyimpan data CV pengguna?",
+    answer:
+      "CV Checker saat ini berjalan sederhana di browser dan tidak menggunakan sistem login. Pengguna tetap disarankan untuk tidak memasukkan data pribadi yang terlalu sensitif saat mencoba fitur ini.",
+  },
+  {
+    question: "Apakah lowongan di CariKerja AI sudah diverifikasi?",
+    answer:
+      "Informasi lowongan ditampilkan dari sumber pihak ketiga, sehingga pengguna tetap perlu memeriksa ulang detail lowongan, alamat perusahaan, dan proses rekrutmen di situs asli sebelum mengirimkan lamaran.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
@@ -163,6 +191,27 @@ export default function Home() {
                 Baca artikel →
               </p>
             </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="mb-6">
+          <h2 className="text-3xl font-extrabold">Pertanyaan Umum</h2>
+          <p className="mt-2 max-w-2xl text-slate-600">
+            Beberapa hal penting yang perlu diketahui sebelum menggunakan
+            CariKerja AI.
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          {faqs.map((faq) => (
+            <div key={faq.question} className="rounded-2xl bg-white p-6 shadow">
+              <h3 className="font-bold">{faq.question}</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                {faq.answer}
+              </p>
+            </div>
           ))}
         </div>
       </section>
