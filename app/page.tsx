@@ -1,4 +1,5 @@
 ﻿import { careerArticles } from "./data/careerArticles";
+import { jobCategories } from "./data/jobCategories";
 
 const latestArticles = careerArticles.slice(0, 6);
 
@@ -14,6 +15,9 @@ export default function Home() {
           <nav className="hidden gap-6 text-sm font-medium text-slate-600 md:flex">
             <a href="/jobs" className="hover:text-blue-700">
               Lowongan
+            </a>
+            <a href="/saved-jobs" className="hover:text-blue-700">
+              Tersimpan
             </a>
             <a href="/blog" className="hover:text-blue-700">
               Artikel Karier
@@ -95,6 +99,31 @@ export default function Home() {
               </p>
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="mb-6">
+          <h2 className="text-3xl font-extrabold">Jelajahi Kategori Lowongan</h2>
+          <p className="mt-2 max-w-2xl text-slate-600">
+            Pilih kategori lowongan yang paling sesuai dengan minat dan rencana
+            kariermu.
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-4">
+          {jobCategories.map((category) => (
+            <a
+              key={category.slug}
+              href={`/jobs/category/${category.slug}`}
+              className="rounded-2xl bg-white p-5 shadow transition hover:shadow-lg"
+            >
+              <h3 className="font-bold text-slate-900">{category.name}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                {category.description}
+              </p>
+            </a>
+          ))}
         </div>
       </section>
 
