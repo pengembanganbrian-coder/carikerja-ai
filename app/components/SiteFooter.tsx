@@ -10,24 +10,13 @@
         </div>
 
         <div className="flex flex-wrap gap-4">
-          <a href="/about" className="hover:text-blue-700">
-            Tentang
-          </a>
-          <a href="/contact" className="hover:text-blue-700">
-            Kontak
-          </a>
-          <a href="/privacy-policy" className="hover:text-blue-700">
-            Kebijakan Privasi
-          </a>
-          <a href="/disclaimer" className="hover:text-blue-700">
-            Disclaimer
-          </a>
-          <a href="/jobs" className="hover:text-blue-700">
-            Lowongan
-          </a>
-          <a href="/saved-jobs" className="hover:text-blue-700">
-            Tersimpan
-          </a>
+          <a href="/about" className="hover:text-blue-700">Tentang</a>
+          <a href="/contact" className="hover:text-blue-700">Kontak</a>
+          <a href="/privacy-policy" className="hover:text-blue-700">Kebijakan Privasi</a>
+          <a href="/disclaimer" className="hover:text-blue-700">Disclaimer</a>
+          <a href="/jobs" className="hover:text-blue-700">Lowongan</a>
+          <a href="/saved-jobs" className="hover:text-blue-700">Tersimpan</a>
+          <a href="/job-alerts" className="hover:text-blue-700">Job Alert</a>
         </div>
       </div>
     </footer>
