@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import AdPlaceholder from "../../components/AdPlaceholder";
+import SaveJobButton from "../../components/SaveJobButton";
 
 type Job = {
   id: number;
@@ -184,6 +185,8 @@ export default function JobDetailPage() {
           </section>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <SaveJobButton job={job} />
+
             <a
               href={job.sourceUrl}
               target="_blank"
